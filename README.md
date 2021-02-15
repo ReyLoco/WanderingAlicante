@@ -1,3 +1,5 @@
+Este es un proyecto para el aprendizaje de React. Se trata de una galería visual de fotografías de la provincia de Alicante (España).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
