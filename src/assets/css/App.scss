@@ -74,9 +74,15 @@ section {
 }
 
 #button-lang {
-  width: 120px;
+  width: 95px;
   float: right;
-  margin: 10px 10px 10px 0;
+  margin: 10px 10px;
+  background-color: transparent;
+}
+
+#btn-eng, #btn-esp {
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 #footer {

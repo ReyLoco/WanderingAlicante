@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import sIcon from "../assets/img/esp.png";
+import eIcon from "../assets/img/eng.png";
 
 export default class LanguageBtn extends Component {
   
@@ -7,7 +9,8 @@ export default class LanguageBtn extends Component {
       <div id="button-lang">
         <button id="btn-esp">
           <img
-            src="https://img.icons8.com/color/48/000000/spain.png"
+            src={sIcon}
+          //  src="https://img.icons8.com/color/48/000000/spain.png"
             title="español"
             alt="español"
             onClick={() => this.props.clickLanguage(false)}
@@ -15,7 +18,8 @@ export default class LanguageBtn extends Component {
         </button>
         <button id="btn-eng">
           <img
-            src="https://img.icons8.com/color/48/000000/great-britain.png"
+            src={eIcon}
+            // src="https://img.icons8.com/color/48/000000/great-britain.png"
             title="english"
             alt="english"
             onClick={() => this.props.clickLanguage(true)}
