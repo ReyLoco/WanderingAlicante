@@ -39,17 +39,19 @@ export default class App extends Component {
     }
   } // end clickHandler
 
-  // Function to obtair and urls array depending of the name of the village.
+  // Function to obtain and urls array depending of the name of the village.
   getArrayUrls (villageObj){
     let urlArr=[];
   
     for(let i= 1; i <= villageObj.h; i++ ){
-      urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Horizontales/" + villageObj.name + "_H (" + i + ").jpg")
+      urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Horizontales/" + villageObj.name + "_H(" + i + ").jpg")
     };
     
     for(let i= 1; i <= villageObj.v; i++ ){
-      urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Verticales/" + villageObj.name + "_V (" + i + ").jpg")
+      urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Verticales/" + villageObj.name + "_V(" + i + ").jpg")
     }
+
+    console.log(urlArr);
   
     return urlArr;
   } // end getArrayUrls

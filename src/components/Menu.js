@@ -12,6 +12,7 @@ export default class Menu extends Component {
         { id: 3, name: "Monforte del Cid" },
         { id: 4, name: "Monóvar" },
         { id: 5, name: "Santa Pola" },
+        { id: 6, name: "Villajoiosa" },
         // { id: 100, name: "Contact" },
       ],
     };

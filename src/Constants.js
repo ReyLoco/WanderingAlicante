@@ -1,4 +1,4 @@
-export const IMAGESFOLDER = "./images/villages/";
+export const IMAGESFOLDER = "images/villages/";
 
 export const PHOTOS_NUMBER = 14;
 
@@ -80,6 +80,14 @@ export const VILLAGES = [
     'and its beaches endowed with the blue flag, a symbol of environmental quality awarded by the European Foundation for Environmental Education.',
     h: 60,
     v: 0
+  },
+  {
+    id: 6,
+    name: "Villajoiosa",
+    stext: "Villajoyosa (en valenciano y cooficialmente La Vila Joiosa),​ es un municipio de la Comunidad Valenciana, España. Perteneciente a la provincia de Alicante y situado en la Costa Blanca, en la comarca de la Marina Baja, de la que es su capital, cuenta con 34 673 habitantes (INE 2019).",
+    itext: 'Villajoyosa (in Valencian and co-officially La Vila Joiosa), is a municipality of the Valencian Community, Spain. Belonging to the province of Alicante and located on the Costa Blanca, in the Marina Baja region, of which it is its capital, it has 34 673 inhabitants (INE 2019).',
+    h: 23,
+    v: 1
   },
 
   {
