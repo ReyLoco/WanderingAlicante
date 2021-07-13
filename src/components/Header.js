@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import logo from "../assets/img/logo.jpg";
 
 export default class Header extends Component {
-
+  
   render() {
     return (
-      <header id="header">
+      <header id="header">        
         <div className="row">
           <div className="cols-xs-4">
             <img id="logo" className="img-responsive img-fluid" src={logo} alt="logo" />
@@ -15,6 +15,7 @@ export default class Header extends Component {
             <h2 id="slogan" className="text-center white-text">{this.props.slogan}</h2>
           </div>
         </div>
+        
       </header>
     ); // end return
   } // end render

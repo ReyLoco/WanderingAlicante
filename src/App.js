@@ -4,6 +4,7 @@ import './assets/css/App.scss';
 import * as Constants from './Constants';
 
 // Importación de Componentes
+import LanguageBtn from './components/LanguageBtn';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Introduction from './components/Introduction';
@@ -18,10 +19,12 @@ export default class App extends Component {
 
     this.state = {
       actualId : 0,
-      actualVillageObj : Constants.VILLAGES[0]
+      actualVillageObj : Constants.VILLAGES[0],
+      english : false
     }
 
     this.clickHandler = this.clickHandler.bind(this);
+    this.clickLanguage = this.clickLanguage.bind(this);
   } // end Constructor
   
   // Function to change page, updating the name of village
@@ -39,6 +42,12 @@ export default class App extends Component {
     }
   } // end clickHandler
 
+  clickLanguage(eng){
+    this.setState({
+      english : eng
+    })
+  }
+
   // Function to obtain and urls array depending of the name of the village.
   getArrayUrls (villageObj){
     let urlArr=[];
@@ -50,8 +59,6 @@ export default class App extends Component {
     for(let i= 1; i <= villageObj.v; i++ ){
       urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Verticales/" + villageObj.name + "_V(" + i + ").jpg")
     }
-
-    console.log(urlArr);
   
     return urlArr;
   } // end getArrayUrls
@@ -62,7 +69,8 @@ export default class App extends Component {
       <div className="App container-fluid text-center">
 
         <section className="section-header">
-          <Header title={Constants.APP_TITLE} slogan={Constants.APP_SLOGAN}/>
+          <LanguageBtn clickLanguage={this.clickLanguage}/>
+          <Header title={Constants.APP_TITLE} slogan={Constants.APP_SLOGAN} english={this.state.english}/>
           <Menu clickHandler={this.clickHandler} />
         </section>
 
@@ -70,7 +78,7 @@ export default class App extends Component {
         {
           (this.state.actualId === 0) ? 
 
-            <Introduction altImages={Constants.ALT_IMAGES} photosNumber={Constants.PHOTOS_NUMBER} introductionText={Constants.E_INTRODUCTION_TEXT}/>
+            <Introduction altImages={Constants.ALT_IMAGES} photosNumber={Constants.PHOTOS_NUMBER} introductionText={(this.state.english) ? Constants.E_INTRODUCTION_TEXT : Constants.S_INTRODUCTION_TEXT}/>
 
           : (this.state.actualId === 100) ? 
 
@@ -78,7 +86,7 @@ export default class App extends Component {
 
           : 
 
-            <Gallery village={this.state.actualVillageObj} imgUrls={this.getArrayUrls(this.state.actualVillageObj)}/>
+            <Gallery village={this.state.actualVillageObj} imgUrls={this.getArrayUrls(this.state.actualVillageObj)} english={this.state.english}/>
         }
 
         <section className="section-footer"><Footer /></section>

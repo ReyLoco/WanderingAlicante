@@ -11,6 +11,7 @@ export default class Gallery extends Component {
       showModal: false,
       url: "",
       totalImg: this.props.imgUrls.length,
+      english: this.props.english
     };
 
     this.openModal = this.openModal.bind(this);
@@ -22,7 +23,8 @@ export default class Gallery extends Component {
     return (
       <section id="main-content" refs="gallery-container" className="container-fluid gallery-container">
         <h3>{this.props.village.name}</h3>
-        <p>{this.props.village.itext}</p>
+
+        <p>{(this.props.english) ? this.props.village.itext : this.props.village.stext}</p>
 
         <div className="row">
           {this.props.imgUrls.map((url, index) => {
