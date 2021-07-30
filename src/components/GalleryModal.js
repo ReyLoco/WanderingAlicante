@@ -40,13 +40,13 @@ export default class GalleryModal extends Component {
   // }
 
   render() {
-    if (this.props.isOpen === false) {
+    if (this.props.isopen === false) {
       return null;
     }
 
     return (
       <div
-        isOpen={this.props.isOpen}
+        isopen={this.props.isopen.toString()}
         className="modal-overlay"
         name={this.props.name}
       >

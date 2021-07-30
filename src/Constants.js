@@ -10,7 +10,7 @@ export const E_INTRODUCTION_TEXT = ["My name is Luis Massó. I work as a Softwar
 "All the pictures of each village was taken in a session, in an afternoon. Arrive, walk and click on my camera... and no Photoshop",
 "Maybe you will decide to visit some on these villages. Enjoy!!"]
 
-export const S_INTRODUCTION_TEXT = ["Mi nombre es Luis Massó. Trabajo como programador. Dos de mis hobbies son el senderismo y la fotografía. Creo normal la llamada para crear esta web. Les propongo un viaje alrededor de Alicante y sus pueblos. ",
+export const S_INTRODUCTION_TEXT = ["Mi nombre es Luis Massó. Trabajo como programador. Dos de mis hobbies son el senderismo y la fotografía. Siento la llamada para crear esta web. Les propongo un viaje alrededor de Alicante y sus pueblos. ",
 "Aquí, con un pequeño número de fotografías puede echar un rápido vistazo a la maravillosa belleza de estos antiguos y a la vez modernos pueblos.",
 "Las fotografías fueron hechas en una sesión, en una tarde. Llegar, caminar y click con la cámara y... sin Photoshop.",
 "Quizá decida usted visitar alguno de estos pueblos !!!Disfrute!!!"]
@@ -95,9 +95,9 @@ export const VILLAGES = [
     v: 1
   },
 
-  {
+ /*  {
     id: 100,
     name: "Contact"
-  }
+  } */
 ];
 

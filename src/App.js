@@ -20,7 +20,10 @@ export default class App extends Component {
     this.state = {
       actualId : 0,
       actualVillageObj : Constants.VILLAGES[0],
-      english : false
+      english : false,
+
+      menuOptions : Constants.VILLAGES.map((v) => {return {id: v.id, name: v.name}} ),
+
     }
 
     this.clickHandler = this.clickHandler.bind(this);
@@ -70,8 +73,10 @@ export default class App extends Component {
 
         <section className="section-header">
           <LanguageBtn clickLanguage={this.clickLanguage}/>
+          
           <Header title={Constants.APP_TITLE} slogan={Constants.APP_SLOGAN} english={this.state.english}/>
-          <Menu clickHandler={this.clickHandler} />
+          
+          <Menu clickHandler={this.clickHandler} menuOptions={this.state.menuOptions} />
         </section>
 
         {/* In that section we paint depending of the value of actualId */}
@@ -86,7 +91,7 @@ export default class App extends Component {
 
           : 
 
-            <Gallery village={this.state.actualVillageObj} imgUrls={this.getArrayUrls(this.state.actualVillageObj)} english={this.state.english}/>
+            <Gallery village={this.state.actualVillageObj} imgUrls={this.getArrayUrls(this.state.actualVillageObj)} english={this.state.english} menuOpCount={this.state.menuOptions.length}/>
         }
 
         <section className="section-footer"><Footer /></section>

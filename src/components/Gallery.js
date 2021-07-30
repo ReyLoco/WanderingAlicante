@@ -11,7 +11,10 @@ export default class Gallery extends Component {
       showModal: false,
       url: "",
       totalImg: this.props.imgUrls.length,
-      english: this.props.english
+      english: this.props.english,
+      menuOpCount: this.props.menuOpCount,
+      firstImg: this.props.menuOpCount + 1,
+      lastImg: this.props.imgUrls.length + this.props.menuOpCount,
     };
 
     this.openModal = this.openModal.bind(this);
@@ -33,19 +36,20 @@ export default class Gallery extends Component {
                 <GalleryImage key={"gal" + index} className="gallery-thumbnail img-fluid img-thumbnail" src={url} alt={"Image of " + this.props.village.name + " " + (index + 1)} />
 
                 <span
-                  id={index + 8}
+                  id={index + this.state.menuOpCount}
                   key={"span" + index}
                   className="card-icon-open fa fa-arrows-alt"
                   value={url}
                   onClick={(e) => this.openModal(url)}
-                  onKeyDown={(e) => this.onKeyPressHandler(e, url, index + 8)}
-                  tabIndex={index + 8}
+                  onKeyDown={(e) => this.onKeyPressHandler(e, url, index + this.state.menuOpCount)}
+                  tabIndex={index + this.state.menuOpCount}
                 />
               </div>
             );
           })}
         </div>
-        <GalleryModal isOpen={this.state.showModal} src={this.state.url} closeModal={this.closeModal} onKeyDown={(e) => this.onKeyPressHandler(e, this.state.url)} imgUrls={this.props.imgUrls} />
+        {/* <GalleryModal isopen={this.state.showModal} src={this.state.url} closeModal={this.closeModal}  imgUrls={this.props.imgUrls} /> */}
+        <GalleryModal isopen={this.state.showModal} src={this.state.url} closeModal={this.closeModal} onKeyDown={(e) => this.onKeyPressHandler(e, this.state.url)} imgUrls={this.props.imgUrls} />
       </section>
     ); // end return
   } // end render
@@ -100,23 +104,23 @@ export default class Gallery extends Component {
 
   // Función to set focus in next image
   nextFocus(idElement) {
-    if (idElement === this.props.imgUrls.length + 7) {
-      idElement = 7;
+    if (idElement === this.state.lastImg) {
+      idElement = this.state.lastImg;
     }
     document.getElementById(idElement + 1).focus();
   }
 
   // Function to set focus in previous image
   previousFocus(idElement) {
-    if (idElement === 8) {
-      idElement = this.props.imgUrls.length + 8;
+    if (idElement === 1) {
+      idElement = 1;
     }
     document.getElementById(idElement - 1).focus();
   }
 
   // Function to set focus in down image
   donwImgFocus(idElement) {
-    if (idElement >= this.props.imgUrls.length + 8 - 6 && idElement <= this.props.imgUrls.length + 8) {
+    if (idElement >= this.state.lastImg - 6) {
       document.getElementById(idElement).focus();
     } else {
       document.getElementById(idElement + 6).focus();
@@ -125,7 +129,7 @@ export default class Gallery extends Component {
 
   // Function to set focus in up image
   upImgFocus(idElement) {
-    if (idElement >= 8 && idElement <= 13) {
+    if (idElement < 6) {
       document.getElementById(idElement).focus();
     } else {
       document.getElementById(idElement - 6).focus();
