@@ -95,9 +95,9 @@ export const VILLAGES = [
     v: 1
   },
 
- /*  {
+  {
     id: 100,
     name: "Contact"
-  } */
+  }
 ];
 

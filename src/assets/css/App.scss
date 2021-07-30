@@ -209,17 +209,31 @@ $transition: all 0.25s ease-in-out;
 #contact {
   display: grid;
   width: 100%;
-  grid-template: "lb-mail" 30px "input-mail" 40px "lb-msg" 40px "tx-msg" 200px "btn-msg" 40px;
+  grid-template: "lb-from_name" 30px "input-from_name" 40px "lb-replay_to" 30px "input-replay_to" 40px "lb-msg" 40px "tx-msg" 200px "btn-msg" 40px;
   gap: 10px;
   justify-items: center;
+  font-size: 1.8em;
 }
 
-#lb-mail {
-  grid-area: lb-mail;
+#contact label {
+  margin-top: 10px;
 }
 
-#input-mail {
-  grid-area: input-mail;
+#lb-from_name {
+  grid-area: lb-from_name;
+}
+
+#input-from_name {
+  grid-area: input-from_name;
+  width: 400px;
+}
+
+#lb-replay_to {
+  grid-area: lb-replay_to;
+}
+
+#input-replay_to {
+  grid-area: input-replay_to;
   width: 400px;
 }
 
@@ -235,7 +249,7 @@ $transition: all 0.25s ease-in-out;
 
 #btn-msg {
   grid-area: btn-msg;
-}
+} 
 
 /* end COMMON CSS ***************************************************/
 
@@ -300,8 +314,6 @@ $transition: all 0.25s ease-in-out;
   .section-header a {
     font-size: 1.5rem;
   }
-
-
 
   .img-fluid{
     width: 20%;

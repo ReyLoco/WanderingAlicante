@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-// import mongoose from '../database/database';
+import apiEmailjs from '../apis/apiEmailjs';
+import "font-awesome/css/font-awesome.min.css";
+import emailjs from 'emailjs-com';
 
 
 export default class Contact extends Component {
@@ -7,16 +9,26 @@ export default class Contact extends Component {
     super(props);
 
     this.state = {
-      sended: false,
+      submitted: false,
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.sendmail = this.sendmail.bind(this);
   } // end constructor
 
-  handleClick() {
-    this.setState({
-      submitted: true,
-    });
-  } // end handleClick
+  sendmail =(e) => {
+    e.preventDefault()
+
+    emailjs.sendForm(apiEmailjs.SERVICE_ID, apiEmailjs.TEMPLATE_ID, e.target, apiEmailjs.USER_ID).then(
+        result => {
+            alert('Message sent correctly');
+            this.setState({
+              submitted: true,
+            })
+        },
+        error => {
+            alert( 'There was an error, try again')
+            }
+    )
+} // end sendmail
 
   render() {
     if (this.state.submitted) {
@@ -26,15 +38,17 @@ export default class Contact extends Component {
         <section id="contact-form" className="container text-center">
           <h2>Contacto</h2>
 
-          <form id="contact" className="container text-center" action="send_mail" method="post" >
-            {/*onClick={document.forms['contact-form'].submit('send_mail')}>*/}
-            <label id="lb-mail" for="input-mail">Email</label>
-            <input id="input-mail" type="email" name="email" required></input>
+          <form id="contact" className="container text-center" action="sendmail" method="post" onSubmit = {this.sendmail}>
+            <label id="lb-from_name" for="from_name">Name: </label>
+            <input id="input-from_name" type="text" name="from_name" required></input>
 
-            <label id="lb-msg" for="tx-msg">Your message</label>
+            <label id="lb-replay_to" for="replay_to">Email: </label>
+            <input id="input-replay_to" type="email" name="replay_to" required></input>
+
+            <label id="lb-msg" for="message">Your message: </label>
             <textarea id="tx-msg" type="text" name="message" required></textarea>
 
-            <button id="btn-msg" onClick={this.handleClick} type="submit">
+            <button id="btn-msg" type="submit">
               <i className="fas fa-mail-forward">Send</i>
             </button>
           </form>
