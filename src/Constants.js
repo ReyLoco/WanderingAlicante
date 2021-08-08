@@ -41,12 +41,12 @@ export const VILLAGES = [
   { 
     id: 1,
     name: "Agost",
-    stext: "Agost es un municipio y localidad española de la provincia de Alicante, en la Comunidad Valenciana. Ubicado a unos 18 km al oeste de la ciudad de Alicante, en la comarca del Campo de Alicante, contaba con 4794 habitantes en 2020 (INE).\r\n" & 
-    "Agost se encuentra en los lindes de la llanura litoral que circunda la ciudad de Alicante, donde el terreno se eleva (sierra del Ventós, Maigmó). Sus límites son: al norte, Castalla; al este, Tibi y Alicante; al oeste, Monforte del Cid y Petrel; y al sur, Alicante.\r\n" &
-    "El núcleo más antiguo se distribuye por la parte más alta del cerro que ocupa el pueblo, y parece ser de época íbera, como lo demuestra el hallazgo entre otras piezas, de la Esfinge de Agost. También hay yacimientos de época romana.",
-    itext: "Agost is a Spanish municipality and town in the province of Alicante, in the Valencian Community. Located about 18 km to the west of the city of Alicante, in the region of the Campo de Alicante, he had 4794 inhabitants in 2020 (INE)./r/n" &
-    "Agost is located on the edge of the coastal plain that surrounds the city of Alicante, where the terrain rises (Sierra del Ventós, Maigmó). Its limits are: to the north, Castalla; to the east, Tibi and Alicante; to the west, Monforte del Cid and Petrel; and to the south, Alicante.\r\n" & 
-    "The oldest nucleus is distributed by the highest part of the hill that the town occupies, and it seems to be from the Iberian period, as evidenced by the finding, among other pieces, of the Sphinx of Agost. There are also sites from Roman times.",
+    stext: "Agost es un municipio y localidad española de la provincia de Alicante, en la Comunidad Valenciana. Ubicado a unos 18 km al oeste de la ciudad de Alicante, en la comarca del Campo de Alicante, contaba con 4794 habitantes en 2020 (INE). " +
+    "Agost se encuentra en los lindes de la llanura litoral que circunda la ciudad de Alicante, donde el terreno se eleva (sierra del Ventós, Maigmó). Sus límites son: al norte, Castalla; al este, Tibi y Alicante; al oeste, Monforte del Cid y Petrel; y al sur, Alicante. " +
+    "El núcleo más antiguo se distribuye por la parte más alta del cerro que ocupa el pueblo, y parece ser de época íbera, como lo demuestra el hallazgo entre otras piezas, de la Esfinge de Agost. También hay yacimientos de época romana. ",
+    itext: "Agost is a Spanish municipality and town in the province of Alicante, in the Valencian Community. Located about 18 km to the west of the city of Alicante, in the region of the Campo de Alicante, he had 4794 inhabitants in 2020 (INE). " +
+    "Agost is located on the edge of the coastal plain that surrounds the city of Alicante, where the terrain rises (Sierra del Ventós, Maigmó). Its limits are: to the north, Castalla; to the east, Tibi and Alicante; to the west, Monforte del Cid and Petrel; and to the south, Alicante. " +
+    "The oldest nucleus is distributed by the highest part of the hill that the town occupies, and it seems to be from the Iberian period, as evidenced by the finding, among other pieces, of the Sphinx of Agost. There are also sites from Roman times. ",
     h: 72,
     v: 6
   },
