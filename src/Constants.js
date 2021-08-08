@@ -40,6 +40,14 @@ export const VILLAGES = [
   },
   { 
     id: 1,
+    name: "Agost",
+    stext: "Agost es un municipio y localidad española de la provincia de Alicante, en la Comunidad Valenciana. Ubicado a unos 18 km al oeste de la ciudad de Alicante, en la comarca del Campo de Alicante, contaba con 4794 habitantes en 2020 (INE).",
+    itext: "Agost is a Spanish municipality and town in the province of Alicante, in the Valencian Community. Located about 18 km to the west of the city of Alicante, in the region of the Campo de Alicante, he had 4794 inhabitants in 2020 (INE).",
+    h: 72,
+    v: 6
+  },
+  { 
+    id: 2,
     name: "Aspe",
     stext: "Aspe es un municipio del interior de la provincia de Alicante, Comunidad Valenciana, España. Tiene una población de 20.425 habitantes, según las cifras oficiales del INE de 2017.",
     itext: "Aspe is a village within of province of Alicante, Valencian Community, Spain. It has a population of 20,425 inhabitants, according to the official data of INE of 2017.",
@@ -47,7 +55,7 @@ export const VILLAGES = [
     v: 0
   },
   {
-    id: 2,
+    id: 3,
     name: "Novelda", 
     stext: "Novelda es un municipio situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Conocido por su producción de uva y el comercio de especias y mármol, la localidad contaba con 25.651 habitantes en 2019 (INE).",
     itext:"Novelda is a village located inside of the province of Alicante, in the region of Medio Vinalopó. Known for its grape production and the spices and marble trade. The town had 25,651 inhabitants in 2019 (INE).",
@@ -55,7 +63,7 @@ export const VILLAGES = [
     v: 6
   },
   {
-    id: 3,
+    id: 4,
     name: "Monforte del Cid",
     stext: "Monforte del Cid es un municipio de la Comunidad Valenciana, España. Situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Cuenta con 8165 habitantes, una superficie de 79.2 km² y una densidad poblacional del 102.65 hab./km² (INE 2019)<br>" +
     "Nompot, nombre medieval de Monforte del Cid, cuenta con la distinción monárquica del orlado Toisón de Oro, siendo una concesión del rey Felipe V en el año 1706, junto con el título de «Villa Real, Leal y Fiel», por el apoyo a este en la Guerra de Sucesión Española. " + 
@@ -67,7 +75,7 @@ export const VILLAGES = [
     v: 0
   },
   {
-    id: 4,
+    id: 5,
     name: "Monóvar",
     stext: "Monóvar (en valenciano y cooficialmente, Monòver) es una ciudad situada al sureste de España, en la Comunidad Valenciana, provincia de Alicante, comarca del Medio Vinalopó (en valenciano, Vinalopó Mitjà o Valls del Vinalopó). Cuenta con 12.800 habitantes (INE 2016), " +
     "de los cuales 12.000 viven en el casco urbano de Monóvar, y los 800 restantes, viven diseminados por las distintas pedanías y aldeas, además de los campos que comprende el término municipal. Es una de las ciudades más importantes de la Comunidad Valenciana por su industria.",
@@ -77,7 +85,7 @@ export const VILLAGES = [
     v: 16
   },
   {
-    id: 5,
+    id: 6,
     name: "Santa Pola",
     stext: "Santa Pola​ es un municipio de la Comunidad Valenciana (España) situado en la costa de la provincia de Alicante, en la comarca del Bajo Vinalopó. Contaba con 31.745 habitantes en 2018 (INE).4​ Los principales atractivos de Santa Pola son sus restos históricos, su puerto, " +
     "sus salinas y sus playas dotadas de bandera azul, símbolo de calidad ambiental otorgado por la Fundación Europea de Educación Ambiental.",
@@ -87,7 +95,7 @@ export const VILLAGES = [
     v: 0
   },
   {
-    id: 6,
+    id: 7,
     name: "Villajoiosa",
     stext: "Villajoyosa (en valenciano y cooficialmente La Vila Joiosa),​ es un municipio de la Comunidad Valenciana, España. Perteneciente a la provincia de Alicante y situado en la Costa Blanca, en la comarca de la Marina Baja, de la que es su capital, cuenta con 34 673 habitantes (INE 2019).",
     itext: 'Villajoyosa (in Valencian and co-officially La Vila Joiosa), is a municipality of the Valencian Community, Spain. Belonging to the province of Alicante and located on the Costa Blanca, in the Marina Baja region, of which it is its capital, it has 34 673 inhabitants (INE 2019).',
