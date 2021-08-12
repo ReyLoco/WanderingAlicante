@@ -41,70 +41,94 @@ export const VILLAGES = [
   { 
     id: 1,
     name: "Agost",
-    stext: "Agost es un municipio y localidad española de la provincia de Alicante, en la Comunidad Valenciana. Ubicado a unos 18 km al oeste de la ciudad de Alicante, en la comarca del Campo de Alicante, contaba con 4794 habitantes en 2020 (INE). " +
-    "Agost se encuentra en los lindes de la llanura litoral que circunda la ciudad de Alicante, donde el terreno se eleva (sierra del Ventós, Maigmó). Sus límites son: al norte, Castalla; al este, Tibi y Alicante; al oeste, Monforte del Cid y Petrel; y al sur, Alicante. " +
-    "El núcleo más antiguo se distribuye por la parte más alta del cerro que ocupa el pueblo, y parece ser de época íbera, como lo demuestra el hallazgo entre otras piezas, de la Esfinge de Agost. También hay yacimientos de época romana. ",
-    itext: "Agost is a Spanish municipality and town in the province of Alicante, in the Valencian Community. Located about 18 km to the west of the city of Alicante, in the region of the Campo de Alicante, he had 4794 inhabitants in 2020 (INE). " +
-    "Agost is located on the edge of the coastal plain that surrounds the city of Alicante, where the terrain rises (Sierra del Ventós, Maigmó). Its limits are: to the north, Castalla; to the east, Tibi and Alicante; to the west, Monforte del Cid and Petrel; and to the south, Alicante. " +
-    "The oldest nucleus is distributed by the highest part of the hill that the town occupies, and it seems to be from the Iberian period, as evidenced by the finding, among other pieces, of the Sphinx of Agost. There are also sites from Roman times. ",
+    iurl: "https://en.wikipedia.org/wiki/Agost",
+    surl: "https://es.wikipedia.org/wiki/Agost",
+    
+    stext: [" es un municipio y localidad española de la provincia de Alicante, en la Comunidad Valenciana. Ubicado a unos 18 km al oeste de la ciudad de Alicante, en la comarca del Campo de Alicante, contaba con 4794 habitantes en 2020 (INE).",
+    "Agost se encuentra en los lindes de la llanura litoral que circunda la ciudad de Alicante, donde el terreno se eleva (sierra del Ventós, Maigmó). Sus límites son: al norte, Castalla; al este, Tibi y Alicante; al oeste, Monforte del Cid y Petrel; y al sur, Alicante.", 
+    "El núcleo más antiguo se distribuye por la parte más alta del cerro que ocupa el pueblo, y parece ser de época íbera, como lo demuestra el hallazgo entre otras piezas, de la Esfinge de Agost. También hay yacimientos de época romana. "],
+    
+    itext: [" is a Spanish municipality and town in the province of Alicante, in the Valencian Community. Located about 18 km to the west of the city of Alicante, in the region of the Campo de Alicante, he had 4794 inhabitants in 2020 (INE).",
+    "Agost is located on the edge of the coastal plain that surrounds the city of Alicante, where the terrain rises (Sierra del Ventós, Maigmó). Its limits are: to the north, Castalla; to the east, Tibi and Alicante; to the west, Monforte del Cid and Petrel; and to the south, Alicante.",
+    "The oldest nucleus is distributed by the highest part of the hill that the town occupies, and it seems to be from the Iberian period, as evidenced by the finding, among other pieces, of the Sphinx of Agost. There are also sites from Roman times. "],
     h: 72,
     v: 6
   },
   { 
     id: 2,
     name: "Aspe",
-    stext: "Aspe es un municipio del interior de la provincia de Alicante, Comunidad Valenciana, España. Tiene una población de 20.425 habitantes, según las cifras oficiales del INE de 2017.",
-    itext: "Aspe is a village within of province of Alicante, Valencian Community, Spain. It has a population of 20,425 inhabitants, according to the official data of INE of 2017.",
+    iurl: "https://en.wikipedia.org/wiki/Aspe",
+    surl: "https://es.wikipedia.org/wiki/Aspe",
+    
+    stext: [" es un municipio del interior de la provincia de Alicante, Comunidad Valenciana, España. Tiene una población de 20.425 habitantes, según las cifras oficiales del INE de 2017."],
+    
+    itext: [" is a village within of province of Alicante, Valencian Community, Spain. It has a population of 20,425 inhabitants, according to the official data of INE of 2017."],
     h: 24,
     v: 0
   },
   {
     id: 3,
     name: "Novelda", 
-    stext: "Novelda es un municipio situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Conocido por su producción de uva y el comercio de especias y mármol, la localidad contaba con 25.651 habitantes en 2019 (INE).",
-    itext:"Novelda is a village located inside of the province of Alicante, in the region of Medio Vinalopó. Known for its grape production and the spices and marble trade. The town had 25,651 inhabitants in 2019 (INE).",
+    iurl: "https://en.wikipedia.org/wiki/Novelda",
+    surl: "https://es.wikipedia.org/wiki/Novelda",
+    
+    stext: [" es un municipio situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Conocido por su producción de uva y el comercio de especias y mármol, la localidad contaba con 25.651 habitantes en 2019 (INE)."],
+    
+    itext: [" is a village located inside of the province of Alicante, in the region of Medio Vinalopó. Known for its grape production and the spices and marble trade. The town had 25,651 inhabitants in 2019 (INE)."],
     h: 30,
     v: 6
   },
   {
     id: 4,
     name: "Monforte del Cid",
-    stext: "Monforte del Cid es un municipio de la Comunidad Valenciana, España. Situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Cuenta con 8165 habitantes, una superficie de 79.2 km² y una densidad poblacional del 102.65 hab./km² (INE 2019)<br>" +
-    "Nompot, nombre medieval de Monforte del Cid, cuenta con la distinción monárquica del orlado Toisón de Oro, siendo una concesión del rey Felipe V en el año 1706, junto con el título de «Villa Real, Leal y Fiel», por el apoyo a este en la Guerra de Sucesión Española. " + 
-    "Monóvar (en valenciano y cooficialmente, Monòver) es una ciudad situada al sureste de España, en la Comunidad Valenciana, provincia de Alicante, comarca del Medio Vinalopó (en valenciano, Vinalopó Mitjà o Valls del Vinalopó). Cuenta con 12.800 habitantes (INE 2016), " +
-    "de los cuales 12.000 viven en el casco urbano de Monóvar, y los 800 restantes, viven diseminados por las distintas pedanías y aldeas, además de los campos que comprende el término municipal. Es una de las ciudades más importantes de la Comunidad Valenciana por su industria.",
-    itext:"Monforte del Cid is a village in the Valencian Community, Spain. Located inside of the province of Alicante, in the region of Medio Vinalopó. It has 8165 inhabitants, a surface area of 79.2 km² and a population density of 102.65 inhabitants / km² (INE 2019) " +
-    "Nompot, medieval name of Monforte del Cid, has the monarchical distinction of the Orlado Toisón de Oro, being a concession of King Felipe V in 1706, together with the title of 'Villa Real, Leal y Fiel', for supporting this in the War of the Spanish Succession.",
+    iurl: "https://en.wikipedia.org/wiki/Monforte_del_Cid",
+    surl: "https://es.wikipedia.org/wiki/Monforte_del_Cid",
+    
+    stext: [" es un municipio de la Comunidad Valenciana, España. Situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Cuenta con 8165 habitantes, una superficie de 79.2 km² y una densidad poblacional del 102.65 hab./km² (INE 2019)",
+    "Nompot, nombre medieval de Monforte del Cid, cuenta con la distinción monárquica del orlado Toisón de Oro, siendo una concesión del rey Felipe V en el año 1706, junto con el título de «Villa Real, Leal y Fiel», por el apoyo a este en la Guerra de Sucesión Española."],
+    
+    itext: [" is a village in the Valencian Community, Spain. Located inside of the province of Alicante, in the region of Medio Vinalopó. It has 8165 inhabitants, a surface area of 79.2 km² and a population density of 102.65 inhabitants / km² (INE 2019)",
+    "Nompot, medieval name of Monforte del Cid, has the monarchical distinction of the Orlado Toisón de Oro, being a concession of King Felipe V in 1706, together with the title of 'Villa Real, Leal y Fiel', for supporting this in the War of the Spanish Succession."],
     h: 42,
     v: 0
   },
   {
     id: 5,
     name: "Monóvar",
-    stext: "Monóvar (en valenciano y cooficialmente, Monòver) es una ciudad situada al sureste de España, en la Comunidad Valenciana, provincia de Alicante, comarca del Medio Vinalopó (en valenciano, Vinalopó Mitjà o Valls del Vinalopó). Cuenta con 12.800 habitantes (INE 2016), " +
-    "de los cuales 12.000 viven en el casco urbano de Monóvar, y los 800 restantes, viven diseminados por las distintas pedanías y aldeas, además de los campos que comprende el término municipal. Es una de las ciudades más importantes de la Comunidad Valenciana por su industria.",
-    itext:"Monóvar (in Valencian and co-officially, Monòver) is a city located in the southeast of Spain, in the Valencian Community, province of Alicante, region of Medio Vinalopó (in Valencian, Vinalopó Mitjà or Valls del Vinalopó) . It has 12,800 inhabitants (INE 2016), " +
-    "of which 12,000 live in the urban area of Monóvar, and the remaining 800 live scattered throughout the different districts and villages, in addition to the fields that comprise the municipality. It is one of the most important cities in the Valencian Community for its industry.",
+    iurl: "https://es.wikipedia.org/wiki/Monóvar",
+    surl: "https://es.wikipedia.org/wiki/Monóvar",
+
+
+    stext: [" (en valenciano y cooficialmente, Monòver) es una ciudad situada al sureste de España, en la Comunidad Valenciana, provincia de Alicante, comarca del Medio Vinalopó (en valenciano, Vinalopó Mitjà o Valls del Vinalopó). Cuenta con 12.800 habitantes (INE 2016), " +
+    "de los cuales 12.000 viven en el casco urbano de Monóvar, y los 800 restantes, viven diseminados por las distintas pedanías y aldeas, además de los campos que comprende el término municipal. Es una de las ciudades más importantes de la Comunidad Valenciana por su industria."],
+    itext: [" (in Valencian and co-officially, Monòver) is a city located in the southeast of Spain, in the Valencian Community, province of Alicante, region of Medio Vinalopó (in Valencian, Vinalopó Mitjà or Valls del Vinalopó) . It has 12,800 inhabitants (INE 2016), " +
+    "of which 12,000 live in the urban area of Monóvar, and the remaining 800 live scattered throughout the different districts and villages, in addition to the fields that comprise the municipality. It is one of the most important cities in the Valencian Community for its industry."],
     h: 24,
     v: 16
   },
   {
     id: 6,
     name: "Santa Pola",
-    stext: "Santa Pola​ es un municipio de la Comunidad Valenciana (España) situado en la costa de la provincia de Alicante, en la comarca del Bajo Vinalopó. Contaba con 31.745 habitantes en 2018 (INE).4​ Los principales atractivos de Santa Pola son sus restos históricos, su puerto, " +
-    "sus salinas y sus playas dotadas de bandera azul, símbolo de calidad ambiental otorgado por la Fundación Europea de Educación Ambiental.",
-    itext: 'Santa Pola is a village of the Valencian Community (Spain) located on the coast of the province of Alicante, in the "Bajo Vinalopó" region. It had 31,745 inhabitants in 2018 (INE) .4 The main attractions of Santa Pola are its historical remains, its port, its salt flats ' + 
-    'and its beaches endowed with the blue flag, a symbol of environmental quality awarded by the European Foundation for Environmental Education.',
+    iurl: "https://en.wikipedia.org/wiki/Santa_Pola",
+    surl: "https://es.wikipedia.org/wiki/Santa_Pola",
+
+    stext: ["​ es un municipio de la Comunidad Valenciana (España) situado en la costa de la provincia de Alicante, en la comarca del Bajo Vinalopó. Contaba con 31.745 habitantes en 2018 (INE).4​ Los principales atractivos de Santa Pola son sus restos históricos, su puerto, " +
+    "sus salinas y sus playas dotadas de bandera azul, símbolo de calidad ambiental otorgado por la Fundación Europea de Educación Ambiental."],
+    itext: [" is a village of the Valencian Community (Spain) located on the coast of the province of Alicante, in the Bajo Vinalopó region. It had 31,745 inhabitants in 2018 (INE) .4 The main attractions of Santa Pola are its historical remains, its port, its salt flats " + 
+    "and its beaches endowed with the blue flag, a symbol of environmental quality awarded by the European Foundation for Environmental Education."],
     h: 60,
     v: 0
   },
   {
     id: 7,
-    name: "Villajoiosa",
-    stext: "Villajoyosa (en valenciano y cooficialmente La Vila Joiosa),​ es un municipio de la Comunidad Valenciana, España. Perteneciente a la provincia de Alicante y situado en la Costa Blanca, en la comarca de la Marina Baja, de la que es su capital, cuenta con 34 673 habitantes (INE 2019).",
-    itext: 'Villajoyosa (in Valencian and co-officially La Vila Joiosa), is a municipality of the Valencian Community, Spain. Belonging to the province of Alicante and located on the Costa Blanca, in the Marina Baja region, of which it is its capital, it has 34 673 inhabitants (INE 2019).',
-    h: 23,
-    v: 1
+    name: "Villajoyosa",
+    iurl: "https://en.wikipedia.org/wiki/Villajoyosa",
+    surl: "https://es.wikipedia.org/wiki/Villajoyosa",
+
+    stext: ["Villajoiosa (en valenciano y cooficialmente La Vila Joiosa),​ es un municipio de la Comunidad Valenciana, España. Perteneciente a la provincia de Alicante y situado en la Costa Blanca, en la comarca de la Marina Baja, de la que es su capital, cuenta con 34 673 habitantes (INE 2019)."],
+    itext: ["Villajoiosa (in Valencian and co-officially La Vila Joiosa), is a municipality of the Valencian Community, Spain. Belonging to the province of Alicante and located on the Costa Blanca, in the Marina Baja region, of which it is its capital, it has 34 673 inhabitants (INE 2019)."],
+    h: 24,
+    v: 0
   },
 
   {

@@ -3,6 +3,8 @@ import GalleryImage from "./GalleryImage.js";
 import GalleryModal from "./GalleryModal.js";
 import "font-awesome/css/font-awesome.min.css";
 
+import Paragraf from "./Paragraf.js";
+
 export default class Gallery extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +29,12 @@ export default class Gallery extends Component {
       <section id="main-content" refs="gallery-container" className="container-fluid gallery-container">
         <h3>{this.props.village.name}</h3>
 
-        <p>{(this.props.english) ? this.props.village.itext : this.props.village.stext}</p>
+        <article>
+          <Paragraf text={(this.props.english)?this.props.village.itext : this.props.village.stext} 
+                    village={this.props.village.name} 
+                    url={(this.props.english)?this.props.village.iurl : this.props.village.surl}>
+          </Paragraf>
+        </article>
 
         <div className="row">
           {this.props.imgUrls.map((url, index) => {

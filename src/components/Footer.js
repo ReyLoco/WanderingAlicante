@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Paragraf from "./Paragraf";
 
 export default class Footer extends Component {
   constructor(props) {
@@ -12,11 +13,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div id="footer">
-        <div id="content">
-          {this.state.text.map((elem, i) => {
-            return <p key={"footer-parr-" + i}>{elem}</p>;
-          })}
-        </div>
+        <Paragraf text={this.state.text}></Paragraf>
       </div>
     ); // end return
   } // end render
