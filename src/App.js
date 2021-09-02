@@ -74,7 +74,7 @@ export default class App extends Component {
         <section className="section-header">
           <LanguageBtn clickLanguage={this.clickLanguage}/>
           
-          <Header title={Constants.APP_TITLE} slogan={Constants.APP_SLOGAN} english={this.state.english}/>
+          <Header title={Constants.APP_TITLE} slogan={(this.state.english) ? Constants.APP_E_SLOGAN : Constants.APP_S_SLOGAN} english={this.state.english}/>
           
           <Menu clickHandler={this.clickHandler} menuOptions={this.state.menuOptions} />
         </section>

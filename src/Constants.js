@@ -3,7 +3,9 @@ export const IMAGESFOLDER = "images/villages/";
 export const PHOTOS_NUMBER = 14;
 
 export const APP_TITLE = "Wandering Alicante";
-export const APP_SLOGAN = "A photographic journey through Alicante and its villages"
+
+export const APP_E_SLOGAN = "A photographic journey through Alicante and its villages"
+export const APP_S_SLOGAN = "Un viaje fotográfico a través de Alicante y sus pueblos"
 
 export const E_INTRODUCTION_TEXT = ["My name is Luis Massó. I work as a Software Developer. Two of my hobbies are hikking and photography. It's normal that I have felt the call to create this web. I propose you a jurney around Alicante and its villages and small towns. ",
 "Here, in an small number of photographies that you can take a quick look of this beauty, amazing, ancient and at the same time modern villages.",

@@ -49,7 +49,7 @@ export default class Contact extends Component {
             <textarea id="tx-msg" type="text" name="message" required></textarea>
 
             <button id="btn-msg" type="submit">
-              <i className="fas fa-mail-forward">Send</i>
+              <i className="fa fa-envelope">Send</i>
             </button>
           </form>
         </section>
