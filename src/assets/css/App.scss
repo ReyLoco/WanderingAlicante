@@ -18,7 +18,7 @@ code {
     monospace;
 }
 
-.container-fluid{
+.container-fluid {
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -79,7 +79,8 @@ section {
   background-color: transparent;
 }
 
-#btn-eng, #btn-esp {
+#btn-eng,
+#btn-esp {
   border-radius: 25px;
   background-color: transparent;
 }
@@ -146,7 +147,7 @@ $transition: all 0.25s ease-in-out;
 
   &:focus,
   &:hover {
-    color:  white;
+    color: white;
   }
 }
 
@@ -249,38 +250,33 @@ $transition: all 0.25s ease-in-out;
 
 #btn-msg {
   grid-area: btn-msg;
-} 
-
-/* end COMMON CSS ***************************************************/
+} /* end COMMON CSS ***************************************************/
 
 /* BIG SIZE If the screen size is 800px or more *********************/
-
 @media (min-width: 801px) {
   body {
     font-size: 1.2rem;
   }
 
-  .section-header #titulo{
-    font-size: 4rem;
+  .section-header #titulo {
+    font-size: 5rem;
   }
 
   p,
   .section-header #slogan,
   .section-header a {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
 }
-
 /* end media  BIG SIZE ********************************************/
 
 /* MEDIUM SIZE If the screen size is beetween 400px and 800px *******/
-
 @media (min-width: 400px) and (max-width: 800px) {
   body {
     font-size: 0.9rem;
   }
 
-  .section-header #titulo{
+  .section-header #titulo {
     font-size: 3rem;
   }
 
@@ -299,19 +295,16 @@ $transition: all 0.25s ease-in-out;
   .section-header a {
     font-size: 1.9rem;
   }
-}
-
-/* end media  MEDIUM SIZE *****************************************/
+} /* end media  MEDIUM SIZE *****************************************/
 
 /* SMALL SIZE If the screen size is 400px or less *******************/
-
 @media (max-width: 399px) {
   body {
     font-size: 0.8rem;
     padding: 1.1rem;
   }
 
-  .section-header #titulo{
+  .section-header #titulo {
     font-size: 1.8rem;
   }
 
@@ -342,6 +335,11 @@ $transition: all 0.25s ease-in-out;
   #button-lang img {
     width: 80%;
     height: 80%;
+  }
+
+  #main-content,
+  #contact-form {
+    padding: 15px;
   }
 
   p,

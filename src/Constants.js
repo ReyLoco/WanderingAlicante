@@ -1,6 +1,6 @@
 export const IMAGESFOLDER = "images/villages/";
 
-export const PHOTOS_NUMBER = 14;
+export const ALICANTE_PHOTOS_NUMBER = 14;
 
 export const APP_TITLE = "Wandering Alicante";
 
@@ -53,6 +53,7 @@ export const VILLAGES = [
     itext: [" is a Spanish municipality and town in the province of Alicante, in the Valencian Community. Located about 18 km to the west of the city of Alicante, in the region of the Campo de Alicante, he had 4794 inhabitants in 2020 (INE).",
     "Agost is located on the edge of the coastal plain that surrounds the city of Alicante, where the terrain rises (Sierra del Ventós, Maigmó). Its limits are: to the north, Castalla; to the east, Tibi and Alicante; to the west, Monforte del Cid and Petrel; and to the south, Alicante.",
     "The oldest nucleus is distributed by the highest part of the hill that the town occupies, and it seems to be from the Iberian period, as evidenced by the finding, among other pieces, of the Sphinx of Agost. There are also sites from Roman times. "],
+    
     h: 72,
     v: 6
   },
@@ -65,11 +66,27 @@ export const VILLAGES = [
     stext: [" es un municipio del interior de la provincia de Alicante, Comunidad Valenciana, España. Tiene una población de 20.425 habitantes, según las cifras oficiales del INE de 2017."],
     
     itext: [" is a village within of province of Alicante, Valencian Community, Spain. It has a population of 20,425 inhabitants, according to the official data of INE of 2017."],
+    
     h: 24,
     v: 0
   },
   {
     id: 3,
+    name: "Ibi", 
+    iurl: "https://en.wikipedia.org/wiki/Ibi",
+    surl: "https://en.wikipedia.org/wiki/Ibi,_Spain",
+    
+    stext: [" es un municipio del interior de la provincia de Alicante, en la Comunidad Valenciana, España. Situada en la comarca de la Hoya de Alcoy, es la población más grande de la subcomarca geográfica de la Hoya de Castalla. Cuenta con 23 564 habitantes​ (INE, 2020)."],
+    
+    itext: [" (Valencian and Spanish: [ˈiβi]) is a town located in the comarca of Alcoià, in the province of Alicante, Spain. As of 2009, Ibi has a total population of c. 24,000 inhabitants. The town, which is located 37 km from the city of Alicante, is surrounded by mountains and gorges.",
+    "The economy of Ibi is chiefly based on the toy industry, the most important of this kind in Spain. As a result, many other related industries have also emerged in the last years: plastic, metal, machinery and others. There are some factories making construction materials, ice creams and tiger nut milk, also.",
+    "Some of the most important monuments in Ibi are the Catholic Church of the Transfiguration and the monument to the Three Wise Men, possibly the only one in the world. "],
+    
+    h: 48,
+    v: 0
+  },
+  {
+    id: 4,
     name: "Novelda", 
     iurl: "https://en.wikipedia.org/wiki/Novelda",
     surl: "https://es.wikipedia.org/wiki/Novelda",
@@ -77,11 +94,12 @@ export const VILLAGES = [
     stext: [" es un municipio situado en el interior de la provincia de Alicante, en la comarca del Medio Vinalopó. Conocido por su producción de uva y el comercio de especias y mármol, la localidad contaba con 25.651 habitantes en 2019 (INE)."],
     
     itext: [" is a village located inside of the province of Alicante, in the region of Medio Vinalopó. Known for its grape production and the spices and marble trade. The town had 25,651 inhabitants in 2019 (INE)."],
+    
     h: 30,
     v: 6
   },
   {
-    id: 4,
+    id: 5,
     name: "Monforte del Cid",
     iurl: "https://en.wikipedia.org/wiki/Monforte_del_Cid",
     surl: "https://es.wikipedia.org/wiki/Monforte_del_Cid",
@@ -91,11 +109,12 @@ export const VILLAGES = [
     
     itext: [" is a village in the Valencian Community, Spain. Located inside of the province of Alicante, in the region of Medio Vinalopó. It has 8165 inhabitants, a surface area of 79.2 km² and a population density of 102.65 inhabitants / km² (INE 2019)",
     "Nompot, medieval name of Monforte del Cid, has the monarchical distinction of the Orlado Toisón de Oro, being a concession of King Felipe V in 1706, together with the title of 'Villa Real, Leal y Fiel', for supporting this in the War of the Spanish Succession."],
+    
     h: 42,
     v: 0
   },
   {
-    id: 5,
+    id: 6,
     name: "Monóvar",
     iurl: "https://es.wikipedia.org/wiki/Monóvar",
     surl: "https://es.wikipedia.org/wiki/Monóvar",
@@ -105,11 +124,12 @@ export const VILLAGES = [
     "de los cuales 12.000 viven en el casco urbano de Monóvar, y los 800 restantes, viven diseminados por las distintas pedanías y aldeas, además de los campos que comprende el término municipal. Es una de las ciudades más importantes de la Comunidad Valenciana por su industria."],
     itext: [" (in Valencian and co-officially, Monòver) is a city located in the southeast of Spain, in the Valencian Community, province of Alicante, region of Medio Vinalopó (in Valencian, Vinalopó Mitjà or Valls del Vinalopó) . It has 12,800 inhabitants (INE 2016), " +
     "of which 12,000 live in the urban area of Monóvar, and the remaining 800 live scattered throughout the different districts and villages, in addition to the fields that comprise the municipality. It is one of the most important cities in the Valencian Community for its industry."],
+    
     h: 24,
     v: 16
   },
   {
-    id: 6,
+    id: 7,
     name: "Santa Pola",
     iurl: "https://en.wikipedia.org/wiki/Santa_Pola",
     surl: "https://es.wikipedia.org/wiki/Santa_Pola",
@@ -118,17 +138,19 @@ export const VILLAGES = [
     "sus salinas y sus playas dotadas de bandera azul, símbolo de calidad ambiental otorgado por la Fundación Europea de Educación Ambiental."],
     itext: [" is a village of the Valencian Community (Spain) located on the coast of the province of Alicante, in the Bajo Vinalopó region. It had 31,745 inhabitants in 2018 (INE) .4 The main attractions of Santa Pola are its historical remains, its port, its salt flats " + 
     "and its beaches endowed with the blue flag, a symbol of environmental quality awarded by the European Foundation for Environmental Education."],
+    
     h: 60,
     v: 0
   },
   {
-    id: 7,
+    id: 8,
     name: "Villajoyosa",
     iurl: "https://en.wikipedia.org/wiki/Villajoyosa",
     surl: "https://es.wikipedia.org/wiki/Villajoyosa",
 
     stext: ["Villajoiosa (en valenciano y cooficialmente La Vila Joiosa),​ es un municipio de la Comunidad Valenciana, España. Perteneciente a la provincia de Alicante y situado en la Costa Blanca, en la comarca de la Marina Baja, de la que es su capital, cuenta con 34 673 habitantes (INE 2019)."],
     itext: ["Villajoiosa (in Valencian and co-officially La Vila Joiosa), is a municipality of the Valencian Community, Spain. Belonging to the province of Alicante and located on the Costa Blanca, in the Marina Baja region, of which it is its capital, it has 34 673 inhabitants (INE 2019)."],
+    
     h: 24,
     v: 0
   },

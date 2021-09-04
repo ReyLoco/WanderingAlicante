@@ -22,7 +22,7 @@ export default class App extends Component {
       actualVillageObj : Constants.VILLAGES[0],
       english : false,
 
-      menuOptions : Constants.VILLAGES.map((v) => {return {id: v.id, name: v.name}} ),
+      menuOptions : Constants.VILLAGES.map((v) => {return {id: v.id, name: (v.name) === "Monforte del Cid" ? "Montforte" : v.name}} ),
 
     }
 
@@ -83,7 +83,7 @@ export default class App extends Component {
         {
           (this.state.actualId === 0) ? 
 
-            <Introduction altImages={Constants.ALT_IMAGES} photosNumber={Constants.PHOTOS_NUMBER} introductionText={(this.state.english) ? Constants.E_INTRODUCTION_TEXT : Constants.S_INTRODUCTION_TEXT}/>
+            <Introduction altImages={Constants.ALT_IMAGES} photosNumber={Constants.ALICANTE_PHOTOS_NUMBER} introductionText={(this.state.english) ? Constants.E_INTRODUCTION_TEXT : Constants.S_INTRODUCTION_TEXT}/>
 
           : (this.state.actualId === 100) ? 
 
