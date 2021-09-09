@@ -14,8 +14,7 @@ export default class Menu extends Component {
                   className="white-text"
                   href="/#"
                   onClick={() => this.props.clickHandler(option.id)}
-                  tabIndex={option.id === 100 ? this.props.menuOptions.length + 1 : option.id + 1}
-                  
+                  tabIndex={option.id === 100 ? this.props.menuOptions.length + 1 : option.id + 1}                  
                 >
                   {option.name}
                 </a>

@@ -10,7 +10,6 @@ export default class LanguageBtn extends Component {
         <button id="btn-esp">
           <img
             src={sIcon}
-          //  src="https://img.icons8.com/color/48/000000/spain.png"
             title="español"
             alt="español"
             onClick={() => this.props.clickLanguage(false)}
@@ -19,7 +18,6 @@ export default class LanguageBtn extends Component {
         <button id="btn-eng">
           <img
             src={eIcon}
-            // src="https://img.icons8.com/color/48/000000/great-britain.png"
             title="english"
             alt="english"
             onClick={() => this.props.clickLanguage(true)}

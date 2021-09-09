@@ -55,7 +55,6 @@ export default class Gallery extends Component {
             );
           })}
         </div>
-        {/* <GalleryModal isopen={this.state.showModal} src={this.state.url} closeModal={this.closeModal}  imgUrls={this.props.imgUrls} /> */}
         <GalleryModal isopen={this.state.showModal} src={this.state.url} closeModal={this.closeModal} onKeyDown={(e) => this.onKeyPressHandler(e, this.state.url)} imgUrls={this.props.imgUrls} />
       </section>
     ); // end return
