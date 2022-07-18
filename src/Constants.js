@@ -72,6 +72,37 @@ export const VILLAGES = [
   },
   {
     id: 3,
+    name: "Guardamar del Segura", 
+    iurl: "https://en.wikipedia.org/wiki/Guardamar_del_Segura",
+    surl: "https://es.wikipedia.org/wiki/Guardamar_del_Segura",
+    
+    stext: [" (en español antiguamente hasta 1916 Guardamar)​ es una ciudad y municipio costero de la provincia de Alicante, en la Comunidad Valenciana, España. Situado en la costa sureste de la provincia, forma parte de la comarca de la Vega Baja del Segura. Cuenta con 15 849 habitantes (INE 2020).",
+    "En su término municipal se encuentra la desembocadura del río Segura; la localidad es también conocida por su pinar, plantado a principios del siglo XX para frenar el avance de las dunas móviles litorales, que hasta ese momento invadían los campos de cultivo aledaños. "],
+    
+    itext: [" (Valencian pronunciation: [ˌɡwaɾðaˈmaɾ ðel seˈɣuɾa]) or briefly Guardamar is a municipality of the province of Alicante located at the mouth of the river Segura in southern Valencia (autonomous community), Spain. It is a Mediterranean resort, with a large pine forest abutting an 11-km-long white sand beach.",
+    "Historically an area of fishermen and farmers, Guardamar del Segura is the southernmost point where Valencian is spoken. A Phoenician colony, called Herna by Roman geographer Avienius in his book Ora Maritima was the first settlement near the mouth of Segura river,[2] In Spanish, \"guardar\" means \"safekeeping\" and \"mar\" means \"sea\", and this is another possible basis for its current name.",
+    "Guardamar is the southernmost Catalan-speaking town and in 1991 41.8% of the town's residents could speak it.[3] Guardamar hosts local festivals like Moros i Cristians, L'Encantà, and Fogueres de Sant Joan, which commemorate its history." ],
+    
+    h: 96,
+    v: 0
+  },
+  {
+    id: 4,
+    name: "Hondón de las Nieves", 
+    iurl: "https://en.wikipedia.org/wiki/El_Fondó_de_les_Neus",
+    surl: "https://es.wikipedia.org/wiki/Novelda",
+    
+    stext: [" (en valenciano y cooficialmente el Fondó de les Neus)2​ es una población de la Comunidad Valenciana, España. Situada en el suroeste de la provincia de Alicante, en la comarca del Vinalopó Medio. Cuenta con 2544 habitantes (INE 2019). ",
+    "El término –68,9 km²– se ubica en un pequeño valle protegido por la sierra de Crevillente y la sierra de Algayat , poblado de pinos, almendros, olivos y viñas. Ofrece parajes muy agradables, como por ejemplo el llamado de La Cuesta o el de La Cruz, habilitados para el esparcimiento. Si decidimos reconocer el término caminando, podemos escoger la ruta del Alto Pelao, donde podemos observar numerosas especies vegetales: pino, enebro, tomillo, romero... La fauna local incluye: jabalíes, zorros, perdices, liebres, conejos, lagartos, búhos reales, etc."],
+    
+    itext: [" (Valencian pronunciation: [fonˈdo ðe lez ˈnɛws]; Spanish: Hondón de las Nieves [onˈdon de laz ˈnjeβes]) is a municipality in the comarca of Vinalopó Mitjà in the Comunidad Valenciana, Spain.",
+    "It is a small village, inland, west of the Alicante province. Its nearest city is Elche to the south east or Crevillente. The name literally means \"Gorge of the Snow\", a reference to the village's patron \"The Virgin of the Snow\". This effigy and the church is at the heart of village life. "],
+    
+    h: 72,
+    v: 0
+  },
+  {
+    id: 5,
     name: "Ibi", 
     iurl: "https://en.wikipedia.org/wiki/Ibi",
     surl: "https://en.wikipedia.org/wiki/Ibi,_Spain",
@@ -86,7 +117,7 @@ export const VILLAGES = [
     v: 0
   },
   {
-    id: 4,
+    id: 6,
     name: "Novelda", 
     iurl: "https://en.wikipedia.org/wiki/Novelda",
     surl: "https://es.wikipedia.org/wiki/Novelda",
@@ -99,7 +130,7 @@ export const VILLAGES = [
     v: 6
   },
   {
-    id: 5,
+    id: 7,
     name: "Monforte del Cid",
     iurl: "https://en.wikipedia.org/wiki/Monforte_del_Cid",
     surl: "https://es.wikipedia.org/wiki/Monforte_del_Cid",
@@ -114,7 +145,7 @@ export const VILLAGES = [
     v: 0
   },
   {
-    id: 6,
+    id: 8,
     name: "Monóvar",
     iurl: "https://es.wikipedia.org/wiki/Monóvar",
     surl: "https://es.wikipedia.org/wiki/Monóvar",
@@ -127,22 +158,39 @@ export const VILLAGES = [
     h: 24,
     v: 16
   },
+
   {
-    id: 7,
+    id: 9,
+    name: "Muchamiel",
+    iurl: "hhttps://en.wikipedia.org/wiki/Mutxamel",
+    surl: "https://es.wikipedia.org/wiki/Muchamiel",
+
+    stext: ["​ (en valenciano y oficialmente, Mutxamel) es un municipio de la provincia de Alicante, en la Comunidad Valenciana, España. Está situado en la parte norte del área metropolitana de Alicante y en la comarca del Campo de Alicante. Cuenta con 25 679 habitantes (INE 2021). Su territorio abarca 47,7 km². ", 
+    "Integrado en la comarca de Campo de Alicante, se sitúa a 10 kilómetros del centro de la capital provincial. El término municipal está atravesado por la Autopista del Mediterráneo (AP-7) y por la autovía de circunvalación de Alicante (A-70), además de por las carreteras autonómicas CV-800 (antigua N-340), que permite la comunicación con Jijona, CV-773, que conecta con Busot, y la CV-821, que se dirige a San Vicente del Raspeig y a San Juan de Alicante.",
+    "El relieve del municipio es predominantemente llano, por situarse en pleno Campo de Alicante, sin embargo, al oeste se alzan pequeñas sierras (Serra del Boter, Serra Pelada). El río Monnegre o río Seco cruza el norte el territorio camino de la costa. La altitud oscila entre los 468 metros al oeste (pico Sabinar) y los 40 metros a orillas del río Monnegre. El pueblo se alza a 63 metros sobre el nivel del mar​. "],
+    itext: [" (Valencian pronunciation: [mutʃaˈmɛl])[2] or Muchamiel (in Spanish) is a municipality in the comarca of Alacantí, Alicante, Valencian Community, Spain. "],
+    
+    h: 0,
+    v: 0
+  },
+
+  {
+    id: 10,
     name: "Santa Pola",
     iurl: "https://en.wikipedia.org/wiki/Santa_Pola",
     surl: "https://es.wikipedia.org/wiki/Santa_Pola",
 
     stext: ["​ es un municipio de la Comunidad Valenciana (España) situado en la costa de la provincia de Alicante, en la comarca del Bajo Vinalopó. Contaba con 31.745 habitantes en 2018 (INE).4​ Los principales atractivos de Santa Pola son sus restos históricos, su puerto, " +
     "sus salinas y sus playas dotadas de bandera azul, símbolo de calidad ambiental otorgado por la Fundación Europea de Educación Ambiental."],
-    itext: [" is a village of the Valencian Community (Spain) located on the coast of the province of Alicante, in the Bajo Vinalopó region. It had 31,745 inhabitants in 2018 (INE) .4 The main attractions of Santa Pola are its historical remains, its port, its salt flats " + 
+    itext: [" is a village of the Valencian Community (Spain) located on the coast of the province of Alicante, in the Bajo Vinalopó region. It had 31.745 inhabitants in 2018 (INE) .4 The main attractions of Santa Pola are its historical remains, its port, its salt flats " + 
     "and its beaches endowed with the blue flag, a symbol of environmental quality awarded by the European Foundation for Environmental Education."],
     
     h: 60,
     v: 0
   },
+  
   {
-    id: 8,
+    id: 11,
     name: "Villajoyosa",
     iurl: "https://en.wikipedia.org/wiki/Villajoyosa",
     surl: "https://es.wikipedia.org/wiki/Villajoyosa",

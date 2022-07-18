@@ -22,7 +22,7 @@ export default class App extends Component {
       actualVillageObj : Constants.VILLAGES[0],
       english : false,
 
-      menuOptions : Constants.VILLAGES.map((v) => {return {id: v.id, name: (v.name) === "Monforte del Cid" ? "Montforte" : v.name}} ),
+      menuOptions : Constants.VILLAGES.map((v) => {return {id: v.id, name: (v.name) === "Monforte del Cid" ? "Monforte" : v.name}} ),
 
     }
 
