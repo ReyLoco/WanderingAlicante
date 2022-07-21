@@ -14,88 +14,142 @@ import Contact from './components/Contact';
 
 
 export default class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.state = {
-      actualId : 0,
-      actualVillageObj : Constants.VILLAGES[0],
-      english : false,
+      actualId: 0,
+      actualVillageObj: Constants.VILLAGES[0],
+      english: false,
 
-      menuOptions : Constants.VILLAGES.map((v) => {return {id: v.id, name: (v.name) === "Monforte del Cid" ? "Monforte" : v.name}} ),
-
-    }
+      menuOptions: Constants.VILLAGES.map((v) => {
+        return {
+          id: v.id,
+          name: this.reduceName(v.name),
+        };
+      }),
+    };
 
     this.clickHandler = this.clickHandler.bind(this);
     this.clickLanguage = this.clickLanguage.bind(this);
   } // end Constructor
-  
+
+  // Function to reduce or modify name of village to show in menu
+  reduceName(name) {
+    let res = "";
+    switch (name) {
+      case "Monforte del Cid":
+        res = "Monforte";
+        break;
+      case "Guardamar del Segura":
+        res = "Guardamar";
+        break;
+      default:
+        res = name;
+        break;
+    }
+    return res;
+  }
+
   // Function to change page, updating the name of village
   clickHandler(id) {
-    if (id > 0 && id < 100){
-      this.setState({      
-        actualId : id,
-        actualVillageObj : Constants.VILLAGES[id]
+    if (id > 0 && id < 100) {
+      this.setState({
+        actualId: id,
+        actualVillageObj: Constants.VILLAGES[id],
       });
-    } else
-    {
-      this.setState({      
-        actualId : id,
+    } else {
+      this.setState({
+        actualId: id,
       });
     }
   } // end clickHandler
 
-  clickLanguage(eng){
+  clickLanguage(eng) {
     this.setState({
-      english : eng
-    })
+      english: eng,
+    });
   }
 
   // Function to obtain and urls array depending of the name of the village.
-  getArrayUrls (villageObj){
-    let urlArr=[];
-  
-    for(let i= 1; i <= villageObj.h; i++ ){
-      urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Horizontales/" + villageObj.name + "_H(" + i + ").jpg")
-    };
-    
-    for(let i= 1; i <= villageObj.v; i++ ){
-      urlArr.push( Constants.IMAGESFOLDER + villageObj.name + "/Verticales/" + villageObj.name + "_V(" + i + ").jpg")
+  getArrayUrls(villageObj) {
+    let urlArr = [];
+
+    for (let i = 1; i <= villageObj.h; i++) {
+      urlArr.push(
+        Constants.IMAGESFOLDER +
+          villageObj.name +
+          "/Horizontales/" +
+          villageObj.name +
+          "_H(" +
+          i +
+          ").jpg"
+      );
     }
-  
+
+    for (let i = 1; i <= villageObj.v; i++) {
+      urlArr.push(
+        Constants.IMAGESFOLDER +
+          villageObj.name +
+          "/Verticales/" +
+          villageObj.name +
+          "_V(" +
+          i +
+          ").jpg"
+      );
+    }
+
     return urlArr;
   } // end getArrayUrls
-  
-  
-  render(){ 
+
+  render() {
     return (
       <div className="App container-fluid text-center">
-
         <section className="section-header">
-          <LanguageBtn clickLanguage={this.clickLanguage}/>
-          
-          <Header title={Constants.APP_TITLE} slogan={(this.state.english) ? Constants.APP_E_SLOGAN : Constants.APP_S_SLOGAN} english={this.state.english}/>
-          
-          <Menu clickHandler={this.clickHandler} menuOptions={this.state.menuOptions} />
+          <LanguageBtn clickLanguage={this.clickLanguage} />
+
+          <Header
+            title={Constants.APP_TITLE}
+            slogan={
+              this.state.english
+                ? Constants.APP_E_SLOGAN
+                : Constants.APP_S_SLOGAN
+            }
+            english={this.state.english}
+          />
+
+          <Menu
+            clickHandler={this.clickHandler}
+            menuOptions={this.state.menuOptions}
+          />
         </section>
 
         {/* In that section we paint depending of the value of actualId */}
-        {
-          (this.state.actualId === 0) ? 
+        {this.state.actualId === 0 ? (
+          <Introduction
+            altImages={Constants.ALT_IMAGES}
+            photosNumber={Constants.ALICANTE_PHOTOS_NUMBER}
+            introductionText={
+              this.state.english
+                ? Constants.E_INTRODUCTION_TEXT
+                : Constants.S_INTRODUCTION_TEXT
+            }
+          />
+        ) : this.state.actualId === 100 ? (
+          <Contact />
+        ) : (
+          <Gallery
+            village={this.state.actualVillageObj}
+            imgUrls={this.getArrayUrls(this.state.actualVillageObj)}
+            english={this.state.english}
+            menuOpCount={this.state.menuOptions.length}
+          />
+        )}
 
-            <Introduction altImages={Constants.ALT_IMAGES} photosNumber={Constants.ALICANTE_PHOTOS_NUMBER} introductionText={(this.state.english) ? Constants.E_INTRODUCTION_TEXT : Constants.S_INTRODUCTION_TEXT}/>
-
-          : (this.state.actualId === 100) ? 
-
-            <Contact />
-
-          : 
-
-            <Gallery village={this.state.actualVillageObj} imgUrls={this.getArrayUrls(this.state.actualVillageObj)} english={this.state.english} menuOpCount={this.state.menuOptions.length}/>
-        }
-
-        <section className="section-footer"><Footer /></section>
+        <section className="section-footer">
+          <Footer />
+        </section>
       </div>
-      ); // end return
-  } // end render  
+    ); // end return
+  } // end render
 } // end class App

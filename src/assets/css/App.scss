@@ -23,9 +23,13 @@ code {
   padding-left: 0px;
 }
 
+#navbar ul {
+  margin: 0px 50px;
+}
+
 #navbar li {
-  display: inline;
-  margin: 0 20px;
+  display: inline-block;
+  margin: 0 15px;
 }
 
 #navbar li a {
